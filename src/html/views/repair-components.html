@@ -1,0 +1,121 @@
+<% var data = { title: "Заголовок | Проект" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<section>
+  <div class="top-image">
+    <img src="./img/repair-components_big.jpg" alt="repair components banner" />
+  </div>
+  <div class="container">
+    <div class="row page-headline">
+      <div class="col">
+        <%= _.template(require('./../includes/bread-crumbs.html').default)() %>
+        <h1 class="blue">Ремонт компонентов</h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="text-content mb45">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. ictum at rhoncus sapien eget et nullam.
+                </p>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 m-slide">
+            <div class="img_blue">
+              <img src="./img/repair-components_pic1.jpg" alt="" />
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="container table-container">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <tr class="table-title">
+                  <th class="cel-name"><span>Наименование компонента</span></th>
+                  <th><span>Партийный номер</span></th>
+                  <th><span>Количество</span></th>
+                  <th><span>Состояние</span></th>
+                </tr>
+                <tr class="table-content">
+                  <td class="cel-name"><span>Lorem ipsum</span></td>
+                  <td><span>#654646546565</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr class="table-content">
+                  <td class="cel-name"><span>Lorem ipsum</span></td>
+                  <td><span>#654646546565</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr class="table-content">
+                  <td class="cel-name"><span>Lorem ipsum</span></td>
+                  <td><span>#654646546565</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr class="table-content">
+                  <td class="cel-name"><span>Lorem ipsum</span></td>
+                  <td><span>#654646546565</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr class="table-content">
+                  <td class="cel-name"><span>Lorem ipsum</span></td>
+                  <td><span>#654646546565</span></td>
+                  <td><span>10</span></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr class="table-content">
+                    <td class="cel-name"><span>Lorem ipsum</span></td>
+                    <td><span>#654646546565</span></td>
+                    <td><span>10</span></td>
+                    <td><span>5</span></td>
+                  </tr>
+              </table>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <section class="form col-lg-9">
+          <form action="">
+            <img class="wave-form" src="./img/wave_form.png" alt="">
+            <h2>Запрос на ремонт компонентов</h2>
+            <div class="form__contacts">
+              <input class="contacts__name" type="text" placeholder="Ф.И.О." />
+              <input class="contacts__email" type="text" placeholder="E-mail" />
+            </div>
+            <div class="form-party-number">
+                <input class="party-number_input" type="text" placeholder="Партийный номер">
+                <div class="party-number_amount">
+                    <h6>Количество</h6>
+                    <span class="party-number_button down">–</span>
+                    <input class="party-number_amount-input" value="1" type="text">
+                    <span class="party-number_button up">+</span>
+                </div>
+            </div>
+            <div class="form-add-position">
+                <span class="party-number_button">+</span>
+                <h6>Добавить позицию</h6>
+            </div>
+            <div class="form__submit">
+              <label for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <span
+                  >Я согласен на передачу моих персональных данных компании с
+                  ограниченной ответственностью Engine Support Baltic</span
+                >
+              </label>
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+  </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)() %>

@@ -1,0 +1,205 @@
+@import "./color.scss";
+@import "./variables.scss";
+
+header {
+  .header-top-line {
+    background: $gray_l;
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray2;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .contacts,
+      .contact {
+        display: flex;
+        align-items: center;
+        .contact {
+          margin-right: 30px;
+        }
+        .contact:last-child {
+          margin-right: 0;
+        }
+        .img {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .hamburher{display: none;}
+    }
+  }
+
+  // ------------------ menu
+
+  .menu {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .brand-name {
+        margin: 16px 0;
+      }
+      .header-menu {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        li {
+          margin-right: 40px;
+          // position: relative;
+          :hover {
+            color: $blue;
+            transition: ease-out 0.2s;
+          }
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          font-family: $fira;
+          color: $black;
+        }
+        a.active {
+          color: $blue;
+        }
+
+        .sub {
+          display: flex;
+          align-items: center;
+          
+          .drop-down-list{
+            display: none;
+          }
+          .arr-back_down{
+            width: 11px;
+            height: 7px;
+            background: url('../img/arr_down.svg') no-repeat center;
+            margin-left: 10px;
+          }
+        }
+        .sub.active > .arr-back_down{
+          background: url('../img/arr_up.svg');
+        }
+        .sub.active{
+
+          .drop-down-list {
+            position: absolute;
+            width: 100%;
+            height: 35px;
+            border-top: solid 1px $gray_l;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            top: 22px;
+            li{
+              position: relative;
+              
+            }
+
+            .drop-down-item {
+              text-transform: none;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 19px;
+              color: $gray2;
+            }
+            li:last-child a::after{
+              content: none;
+            }
+
+
+            :hover{
+              color: $blue;
+            }
+          }
+        }
+        .sub.active::after{
+          transform: rotateX(180deg);
+          top: 5px;
+        }
+      }
+
+      // ------------- button
+
+      .menu-button {
+        display: flex;
+
+        button {
+          width: 40px;
+          height: 40px;
+          background: none;
+          border-radius: 5px;
+        }
+
+        form{
+          margin-right: 30px;
+          display: flex;
+          position: relative;
+          input{
+            border: none;
+            width: 0;
+            padding: 0;
+            border-color: #e0e0e0;
+          }
+          button{
+            border: 1px solid #e0e0e0;
+            padding: 0;
+          }
+        }
+        .visible{
+          position: relative;
+          
+          input{
+            position: absolute;
+            right: 40px;
+            width: 120px;
+            height: 100%;
+            padding-left: 16px;
+            border: 1px solid #e0e0e0;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 14px;
+            transition: ease-out .2s;
+            margin-right: -1px;
+            
+          }
+          input::placeholder{
+            color: #e0e0e0;
+            font-size: 14px;
+          }
+          button{
+            border: 1px solid #e0e0e0;
+            border-left: solid 1px $white;
+            border-radius: 0 5px 5px 0;
+          }
+
+        }
+
+
+        .language {
+          background: $blue;
+          border: solid 1px $blue;
+          border-radius: 5px;
+          span {
+            font-family: $fira;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

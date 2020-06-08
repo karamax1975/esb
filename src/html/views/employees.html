@@ -1,0 +1,117 @@
+<% var data = { title: "Заголовок | Проект" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<section>
+  <div class="top-image">
+    <img src="./img/employees_t.jpg" alt="about" />
+  </div>
+  <div class="container">
+    <div class="row page-headline">
+      <div class="col">
+        <%= _.template(require('./../includes/bread-crumbs.html').default)() %>
+        <h1 class="blue">Cотрудники компании</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="text-content mb45">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 m-slide">
+        <div class="img_blue">
+          <img src="./img/repair-engine_pic1.jpg" alt="" />
+        </div>
+        <div class="img_blue">
+          <img src="./img/repair-engine_pic2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- photo employees -->
+
+  <section class="photo-employees">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h2 class="blue">Ключевые сотрудники компании</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="photo-item">
+            <img src="./img/employees-photo_1.jpg" alt="photo employees" />
+            <span class="position">Главный инженер</span>
+            <span class="name">Лопатин Василий Николаевич</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)() %>

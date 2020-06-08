@@ -1,0 +1,78 @@
+@import "./color.scss";
+@import "./variables.scss";
+
+footer{
+  position: relative;
+  .wrapper{
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 80px;
+    span{
+      font-size: 14px;
+      font-family: $arial;
+      color: $white;
+    }
+    .brandName{
+      float: left;
+      img{
+        width: 120px;
+      }
+    }
+    .copyright{
+      float: left;
+      margin-left: 25px;
+      margin-top: 15px;
+    }
+    .contacts-footer{
+      float: right;
+      .contact{
+        margin-bottom: 10px;
+        img{
+          margin-right: 10px;
+        }
+        :last-child{
+          margin-bottom: 0;
+        }
+      }
+  
+    }
+    .footer-nav{
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      padding: 0 15px;
+      .nav-item{
+        a{
+          color: $white;
+          font-family: $arial;
+          font-size: 14px;
+          padding-bottom: 1px;
+        }
+        a:hover{
+          border-bottom: solid 1px $white;
+        }
+      }
+      .footer-drop-down{
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .footer-drop-down.active{
+        margin-top: 10px;
+        height: auto;
+        .drop-down-item{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

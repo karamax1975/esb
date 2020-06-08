@@ -1,0 +1,117 @@
+<% var data = { title: "Заголовок | Проект" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<section class="engine-repair">
+  <div class="top-image">
+    <img src="./img/repair-engine_big.jpg" alt="engine repair banner" />
+  </div>
+  <div class="container">
+    <div class="row page-headline">
+      <div class="col">
+        <%= _.template(require('./../includes/bread-crumbs.html').default)() %>
+        <h1 class="blue">Ремонт авиационных двигателей</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="text-content mb45">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+        </div>
+        <h2 class="blue mb15">
+          Комплекс услуг по ремонту двигателей CF34-3 «под ключ»
+        </h2>
+        <ul class="text-list mb45">
+          <li>
+            Круглосуточная техническая поддержка, служба AOG (Aircraft On
+            Ground);
+          </li>
+          <li>Оперативное и периодическое техническое обслуживание;</li>
+          <li>
+            Обеспечение технического обслуживания самолёта в аэропортах
+            назначения включённым в состав экипажа авиатехником
+          </li>
+          <li>Восстановление и ремонт агрегатов</li>
+          <li>Обновление и модификация оборудования салона</li>
+        </ul>
+        <h2 class="blue mb15">Держите свой флот конкурентоспособным</h2>
+        <div class="text-content mb45">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 m-slide">
+        <div class="img_blue">
+          <img src="./img/repair-engine_pic1.jpg" alt="" />
+        </div>
+        <div class="img_blue">
+          <img src="./img/repair-engine_pic2.jpg" alt="" />
+        </div>
+        <div class="img_blue">
+          <img src="./img/repair-engine_pic3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <section class="form col-lg-9">
+        <form action="">
+          <img class="wave-form" src="./img/wave_form.png" alt="">
+          <h2>
+            Получить предложение по сопровождению и ремонту двигателей CF34-3
+            «под ключ»
+          </h2>
+          <div class="form__contacts">
+            <input class="contacts__name" type="text" placeholder="Ф.И.О." />
+            <input class="contacts__email" type="text" placeholder="E-mail" />
+          </div>
+          <div class="form__send-file">
+            <h5>Результат бороскопия:</h5>
+            <div class="input-file">
+              <input class="hidden" type="file" name="file" id="file" />
+              <span
+                >Отправить файл<br />
+                (файл должен быть формата *.jpeg/*.jpg или *.pdf)</span
+              >
+              <label class="input-file__label" for="file">Файл не выбран</label>
+            </div>
+          </div>
+          <div class="form__submit">
+            <label for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <span
+                >Я согласен на передачу моих персональных данных компании с
+                ограниченной ответственностью Engine Support Baltic</span
+              >
+            </label>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</section>
+<div class="form__chechbox"></div>
+
+<%= _.template(require('./../includes/footer.html').default)() %>

@@ -1,0 +1,306 @@
+@import "./color.scss";
+@import "./variables.scss";
+
+.menu {
+  position: relative;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    .brand-name {
+      img{
+        height: 50px;
+      }
+      
+    }
+    .menu-button {
+      display: flex;
+      .language {
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        margin-right: 16px;
+        span {
+          font-family: $fira;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $blue;
+        }
+      }
+      .hamburher {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          width: 25px;
+          height: 2px;
+          background: $blue;
+          margin-bottom: 5px;
+          border-radius: 1px;
+        }
+        span:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .modal-shadow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    background: none;
+    transition: ease-out 0.5s;
+  }
+  .modal-shadow.active {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    transition: ease-out 0.3s;
+  }
+  .drop-menu {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    left: 100%;
+    transition: ease-out 0.3s;
+    top: 0;
+    z-index: 3;
+    background: $white;
+    overflow: hidden;
+
+    .top-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding: 0 15px;
+      border-bottom: 1px solid $blue;
+      form {
+        display: flex;
+        align-items: center;
+        input{
+          width: 0;
+          padding: 0;
+          border: none;
+
+        }
+        span {
+          font-family: $arial;
+          font-size: 17px;
+          line-height: 20px;
+          color: $blue;
+          margin-left: 16px;
+        }
+      }
+      .active{
+        display: inline-flex;
+        justify-content: space-between;
+        width: calc(100%-40px);
+        transition: ease-out .2s;
+        input{
+          display: block;
+          height: 40px;
+          border: solid 1px $blue;
+          border-right: 0;
+          border-radius: 5px 0 0 5px;
+          width: calc(100%-40px);
+          padding-left: 16px;
+          transition: ease-out .2s;
+        }
+        button{
+          margin-left: -1px;
+          border-left: none;
+          border-radius: 0 5px 5px 0;
+        }
+        span{
+          display: none;
+        }
+      }
+      button,
+      .close-menu {
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        
+      }
+      .close-menu {
+        border-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span {
+          width: 24px;
+          height: 2px;
+          border-radius: 1px;
+          background: $blue;
+          display: block;
+        }
+        span:nth-child(1) {
+          transform: rotateZ(45deg);
+        }
+        span:nth-child(2) {
+          transform: rotateZ(-45deg);
+          margin-top: -2px;
+        }
+      }
+    }
+    nav {
+      .header-menu {
+        overflow: hidden;
+        .sub{
+          position: relative;
+          .drop-down-list_m{
+            position: absolute;
+            height: 330px;
+            background: $white;
+            width: 100vw;
+            margin-left: -15px;
+            left: 100vw;
+            top: 0;
+            padding: 0 15px;
+            transition: ease-out .3s;
+            .back{
+              justify-content: flex-start;
+              span{
+                font-weight: 400 !important;
+              }
+              img{
+                transform: rotateZ(180deg);
+                margin-right: 36px;
+              }
+            }
+            a{
+              span{
+                font-weight: 300;
+              }
+            }
+          }
+          .drop-down-list_m.active{
+            left: 0;
+            box-shadow: -30px 0px 20px rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        li {
+          height: 55px;
+          border-bottom: solid 1px $gray_l;
+          display: flex;
+          align-items: center;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            span {
+              font-family: $fira;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 24px;
+              color: $blue;
+            }
+          }
+        }
+        :last-child {
+          border-bottom: none;
+        }
+        
+      }
+    }
+    .contacts {
+      width: 0;
+      overflow: hidden;
+      background: $gray_l;
+      position: relative;
+      .container {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .contacts::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 37px;
+      width: 100%;
+      background: linear-gradient(180deg, #e1e1e1 0%, #f2f2f2 87.84%);
+      z-index: 1;
+    }
+    .container {
+      text-align: center;
+    }
+    .logo_menu {
+      height: 66px;
+      margin: 16px 0;
+    }
+    .adress {
+      display: block;
+      font-family: $arial;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray2;
+      margin-bottom: 16px;
+    }
+    // .button-wrapper{
+    //   overflow: hidden;
+    // }
+  }
+
+  .drop-menu.active {
+    left: 0;
+    transition: ease-out 0.3s;
+    width: 100vw;
+    .contacts{
+      width: 100%;
+      position: relative;
+      background: $gray_l;
+      min-height: calc(100%-400px);
+      .button-wrapper{
+        // width: 100%;
+        display: inline-block;
+        margin-bottom: 16px;
+        .contacts_item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          span {
+            font-family: $arial;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: $blue;
+            margin-left: 16px;
+          }
+          button {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 1px $blue;
+            border-radius: 5px;
+            background: none;
+            
+          }
+        }
+        .contacts_item:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<% var data = { title: "Заголовок | Проект" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<script
+  class="contacts-map"
+  type="text/javascript"
+  charset="utf-8"
+  async
+  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d82703d8ac2a7808b9afc1254cbf4d3796652c5127f0a0dafe4a80e379aff1d&amp;width=100%25&amp;height=569&amp;lang=ru_RU&amp;scroll=true"
+></script>
+
+<div class="container">
+  <div class="row page-headline">
+    <div class="col">
+      <%= _.template(require('./../includes/bread-crumbs.html').default)() %>
+      <h1 class="blue">Контакты</h1>
+    </div>
+  </div>
+  <div class="row contacts">
+    <div class="col-lg-9">
+      <div class="contacts-list mb45">
+        <div class="contacts-item">
+          <p>Полное фирменное наименование</p>
+          <h2 class="blue">Engine Support Baitic</h2>
+        </div>
+        <div class="contacts-item">
+          <p>Место нахождения:</p>
+          <h2 class="blue">
+            Ziemelu street 20, International Airport “Riga”, Latvia
+          </h2>
+        </div>
+        <div class="contacts-item">
+          <p>Почтовый адрес:</p>
+          <h2 class="blue">
+            Ziemelu street 20, International Airport “Riga”, Latvia
+          </h2>
+        </div>
+        <div class="contacts-item">
+          <p>Телефон</p>
+          <h2 class="blue">8 809 505-46-69</h2>
+        </div>
+        <div class="contacts-item">
+          <p>E-mail</p>
+          <h2 class="blue">info@airsup.lv</h2>
+        </div>
+        <div class="directions">
+          <span>Схема проезда</span>
+        </div>
+        <div class="directions-map">
+            <img src="./img/sxem.png" alt="sxem">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="contacts_logo">
+            <img src="./img/contact_logo.svg" alt="logo">
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)() %>

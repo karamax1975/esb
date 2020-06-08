@@ -1,0 +1,227 @@
+<% var data = { title: "Заголовок | Проект" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<section>
+  <div class="top-image">
+    <img src="./img/about_t.jpg" alt="about" />
+  </div>
+  <div class="container">
+    <div class="row page-headline">
+      <div class="col">
+        <%= _.template(require('./../includes/bread-crumbs.html').default)() %>
+        <h1 class="blue">О нас</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="text-content mb45">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh
+            consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+        </div>
+        <h2 class="blue mb15">Наши цели</h2>
+        <div class="text-content mb45">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus
+            mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet
+            neque. Scelerisque et amet, nullam massa, risus dui gravida porta.
+            Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin
+            dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et
+            nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse
+            pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper
+            potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum
+            tortor turpis porta vel, mauris. Pellentesque at nibh posuere
+            consectetur ultrices viverra lacus elementum. Nibh consequat
+            vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh
+            consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <img class="img-responsive" src="./img/engine.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="container photo-set">
+    <div class="row">
+      <div class="photo-set_wrapper">
+        <div class="photo-item">
+          <img src="./img/repair-engine_pic1.jpg" alt="" />
+        </div>
+        <div class="photo-item">
+          <img src="./img/repair-engine_pic2.jpg" alt="" />
+        </div>
+        <div class="photo-item">
+          <img src="./img/repair-engine_pic3.jpg" alt="" />
+        </div>
+        <div class="photo-item">
+          <img src="./img/sale-components_pic2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="progress">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="progress-item">
+            <img src="./img/progress_1.svg" alt="" />
+            <h1 class="blue">100+</h1>
+            <h2 class="blue">специалистов — наша гордость и главный ресурс</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="progress-item">
+            <img src="./img/progress_2.svg" alt="" />
+            <h1 class="blue">100+</h1>
+            <h2 class="blue">лет опыта на рынке</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="progress-item">
+            <img src="./img/progress_3.svg" alt="" />
+            <h1 class="blue">100+</h1>
+            <h2 class="blue">выполненых проектов<br />по всему миру</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="blue mb15">История компании</h2>
+
+          <div class="timeline-wrapper">
+            <div class="timeline">
+              <div class="timeline_final-yars left">
+                <span>2000</span>
+              </div>
+              <!-- marks  -->
+
+              <div class="owl-carousel marks-wrapper">
+                <div class="timeline_mark item"><div class="mark"></div><span>2001</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2002</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2003</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2004</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2005</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2006</span></div>
+                <div class="timeline_mark item"><div class="mark"></div><span>2007</span></div>
+              </div>
+
+              <!--  -->
+              <div class="timeline_final-yars right">
+                <span>2020</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="timeline-text-wrapper">
+          <div class="timeline-text-item col-lg-9 active">
+            <div class="item-year"><h6>2001</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2002</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2003</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2004</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2005</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2006</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-text-item col-lg-9">
+            <div class="item-year"><h6>2007</h6></div>
+            <div class="text-content mb45">
+              <p class="text-block_underline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempus mauris diam fringilla. Dolor ac aliquam sed enim urna, imperdiet neque. Scelerisque et amet, nullam massa, risus dui gravida porta. Sem accumsan tellus pellentesque tellus sit at. Ac lectus proin dictum turpis blandit volutpat eu. Dictum at rhoncus sapien eget et nullam. Tincidunt mauris nunc orci, auctor nunc suspendisse pellentesque. Orci semper faucibus volutpat nec a. Ac ullamcorper potenti dignissim lorem. Ante in venenatis aliquet at. Bibendum tortor turpis porta vel, mauris. Pellentesque at nibh posuere consectetur ultrices viverra lacus elementum. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui. Nibh consequat vestibulum semper nec, vestibulum tellus dapibus ut dui.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script>
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    nav: true,
+    navText: "",
+    responsive: {
+      0: {
+        items: 2,
+        // margin: 50,
+      },
+      //   600: {
+      //     items: 4,
+      //     margin: 80,
+      //   },
+      1000: {
+        items: 6,
+        // pullDrag:false,
+      },
+    },
+  });
+</script>
+
+<%= _.template(require('./../includes/footer.html').default)() %>

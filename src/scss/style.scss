@@ -1,0 +1,128 @@
+@import "../scss/reset.css";
+@import "./bootstrap-grid.min.css";
+
+@import "./index.scss";
+@import "./color.scss";
+@import "./variables.scss";
+
+@import "./index_page.scss";
+@import "./engine-repair.scss";
+@import "./pages.scss";
+
+@import'./owl.carousel.min.css';
+
+// -----------typography -----------
+h1 {
+  font-family: $fira;
+  font-weight: 400;
+  @media (min-width: 1200px) {
+    font-size: 45px;
+    line-height: 54px;
+    margin-bottom: 15px;
+  }
+}
+h2 {
+  font-family: $fira;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+}
+h3 {
+  font-family: $fira;
+  font-size: 25px;
+  line-height: 25px;
+}
+p {
+  font-family: $arial;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  @media (min-width: 1200px) {
+    line-height: 200%;
+  }
+}
+span {
+  font-family: $arial;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+button {
+  padding: 0;
+}
+
+footer {
+  background: $blue;
+  width: 100%;
+}
+.footer-index {
+  @media (min-width: 1200px) {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+// --------------- greed -----------------
+
+@media (min-width: 1200px) {
+  @import "./header.scss";
+  @import "./footer_d.scss";
+
+  .m,
+  .t {
+    display: none;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  // .drop-menu.active{
+  //   display: none;
+  // }
+}
+
+
+
+// -------------------
+@media (max-width: 1200px) and (min-width: 500px) {
+  .m,
+  .d {
+    display: none;
+  }
+
+  body {
+    @import "./t_header.scss";
+    @import "./footer_t.scss";
+  }
+}
+
+@media (max-width: 500px) {
+  @import "./m_header.scss";
+  @import "./footer_m.scss";
+  .t,
+  .d {
+    display: none;
+  }
+}
+
+// ---------------margins ------
+
+.mb45 {
+  @media (min-width: 1200px) {
+    margin-bottom: 45px;
+  }
+}
+.mb15 {
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
+}
+
+.blue {
+  color: $blue;
+}
