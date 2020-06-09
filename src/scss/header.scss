@@ -46,13 +46,18 @@ header {
       .brand-name {
         margin: 16px 0;
       }
+      nav{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+      }
       .header-menu {
         display: flex;
         position: relative;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70%;
         li {
-          margin-right: 40px;
-          // position: relative;
+
           :hover {
             color: $blue;
             transition: ease-out 0.2s;
