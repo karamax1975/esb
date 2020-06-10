@@ -41,10 +41,14 @@ footer{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      // justify-content: space-between;
       top: 80px;
       left: 0;
       width: 100%;
       padding: 0 15px;
+      @media (max-width: 1200px) and (min-width: 500px) {
+
+      }
       .nav-item{
         a{
           color: $white;

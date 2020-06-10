@@ -28,6 +28,11 @@ footer {
   .footer-nav {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    @media (min-width: 1200px){
+      justify-content: space-between;
+      width: 450px;
+    }
     .nav-item {
       margin-right: 15px;
       a {
